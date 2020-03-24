@@ -1,0 +1,21 @@
+@media screen and (max-width: 680px) {
+    /*in mobile view let map and restaurant infor display in one column*/
+    #maincontent {
+        display: flex;
+        flex-direction: column;
+    }
+    .inside #map-container {
+        height:60vh;
+        width:100vw;
+        position:relative;
+    }
+    #restaurant-container, #reviews-container {
+        width: 100%;
+    }
+    #breadcrumb {
+        width: 100%;
+    }
+    .inside #footer {
+        width: 100%;
+    }
+}
