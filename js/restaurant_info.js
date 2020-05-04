@@ -55,9 +55,30 @@ fillRestaurantHTML = (restaurant = self.restaurant) => {
   const address = document.getElementById('restaurant-address');
   address.innerHTML = restaurant.address;
 
+
+/*fill resturant image src and srcset*/
   const image = document.getElementById('restaurant-img');
   image.className = 'restaurant-img'
-  image.src = DBHelper.imageUrlForRestaurant(restaurant);
+  // image.src = DBHelper.imageUrlForRestaurant(restaurant);
+
+    const restaruantID = restaurant.id;
+    imgLargeUrl = '/img/' + restaruantID + ".jpg";
+    imgSmallUrl = '/img/' + restaruantID + "_400w.jpg";
+
+    image.src = imgLargeUrl;
+    imgage.srcset = `{imgSmallUrl} 680w, {imgLargeUrl} 2000w`;
+
+  // var imgurlbase = DBHelper.imageUrlForRestaurant(restaurant);
+  // var length_image = imgurlbase.length;
+  // imgurlbase = imgurlbase.substring(0, length_image-4);
+  // const imgurl1x = imgurlbase + "_320.jpg";
+  // const imgurl2x = imgurlbase + "_503.jpg";
+  // const imgurl3x = imgurlbase + "_900.jpg";
+  // image.src = imgurl1x;
+  // image.srcset = `${imgurl1x} 320w, ${imgurl2x} 503w, ${imgurl3x} 900w`;
+  // image.sizes = `(max-width: 320px) 320px, (max-width: 503px) 503px, 900px`;
+  // image.alt = restaurant.name + " restaurant marketing photograph";
+
 
   const cuisine = document.getElementById('restaurant-cuisine');
   cuisine.innerHTML = restaurant.cuisine_type;
