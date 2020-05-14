@@ -19,22 +19,38 @@
   </header>
 
   <main id="maincontent">
-    <section id="map-container">
-      <div id="map"></div>
+
+    <section id="map-container" aria-hidden="true" aria-labelledby="aria-map-description" role="application">
+      <div id="map" aria-hidden="true" aria-labelledby="aria-map-description" role="application"></div>
+      <label id="aria-map-description" class="aria-label">interactive map user interface</label>
     </section>
 
-    <section>
+    <section role="main">
       <div class="filter-options">
-        <h2 tabindex="0">Filter Results</h2>
-        <select tabindex="0" id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
+        <h2 tabindex="0" aria-labelledby="aria-filterresults-label">
+            Filter Results
+        </h2>
+        <label id="aria-filterresults-label" class="aria-label">
+            Section Filter Results
+        </label>
+
+        <select tabindex="0" id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()"  aria-labelledby="aria-neighborhoods-label">
           <option value="all">All Neighborhoods</option>
         </select>
+        <label id="aria-neighborhoods-label" class="aria-label">
+            filter results by neighborhood
+        </label>
 
-        <select tabindex="0" id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
+        <select tabindex="0" id="cuisines-select" name="cuisines" onchange="updateRestaurants()" aria-labelledby="aria-cuisines-label">
           <option value="all">All Cuisines</option>
         </select>
+        <label id="aria-cuisines-label" class="aria-label">
+            filter results by cuisines
+        </label>
       </div>
-      <ul tabindex="0" id="restaurants-list"></ul>
+
+      <ul tabindex="0" id="restaurants-list" class="restaurant-results" aria-labelledby="filter-results-list"></ul>
+       <label id="filter-results-list" class="aria-label">Filter Results</label>
     </section>
   </main>
 
@@ -47,9 +63,11 @@
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCUXIlQcqH3IcAfEJSdtpswKPZdRXHJWqY&libraries=places&callback=initMap"></script>
 
 
-  <footer id="footer" tabindex="0">
+  <footer id="footer" tabindex="0" aria-labelledby="aria-footer">
+      <label id="aria-footer" class="aria-label">Footer Copyright Statement</label>
     Copyright (c) 2017 <a href="/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
   </footer>
+
 
 </body>
 
