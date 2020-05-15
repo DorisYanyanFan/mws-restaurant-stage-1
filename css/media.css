@@ -1,5 +1,5 @@
 @media screen and (max-width: 680px) {
-    /*in mobile view let map and restaurant infor display in one column*/
+/*in mobile view let map and restaurant info display in one column*/
     #maincontent {
         display: flex;
         flex-direction: column;
