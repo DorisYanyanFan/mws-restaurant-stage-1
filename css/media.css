@@ -4,6 +4,14 @@
         display: flex;
         flex-direction: column;
     }
+    /* ====================== Restaurant Filtering ====================== */
+    .filter-options {
+      width: 100%;
+      height: auto;
+      align-items: center;
+      padding-top: 10px;
+    }
+    /* ====================== Restaurant Details ====================== */
     .inside #map-container {
         height:60vh;
         width:100vw;

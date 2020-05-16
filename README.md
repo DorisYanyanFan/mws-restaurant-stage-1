@@ -2,12 +2,17 @@
 ---
 #### _Three Stage Course Material Project - Restaurant Reviews_
 
-## Project Overview: Stage 1
+## Open the project
 
-For the **Restaurant Reviews** projects, you will incrementally convert a static webpage to a mobile-ready web application. In **Stage One**, you will take a static design that lacks accessibility and convert the design to be responsive on different sized displays and accessible for screen reader use. You will also add a service worker to begin the process of creating a seamless offline experience for your users.
+Fork and clone the starter repository. The code in this repository will serve as your baseline to begin development.
+From inside the new directory, launch a local client server using Python from your terminal:
+Python 2: python -m SimpleHTTPServer 8000
+Python 3: python3 -m http.server 8000
+Visit the site in your browser at http://localhost:8000
 
 ### Responsive Design
 mobile cutting width 680px
+responsive design cut value: 1024px
 
 ### Specification
 
