@@ -144,7 +144,7 @@ nav h1 a {
   text-align: center;
   display: inline-flex;
   flex-wrap: wrap;
-  align-content: space-between;
+  justify-content: space-between;
 }
 #restaurants-list li {
   background-color: #fff;
