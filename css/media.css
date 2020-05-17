@@ -45,3 +45,30 @@
         width: 100%;
     }
 }
+
+@media screen and (min-width: 681px) and (max-width: 1024px) {
+    /* ====================== Restaurant Listing ====================== */
+    /*make sure each row has only one or two restaurants*/
+    #restaurants-list li {
+    margin: 0px;
+    padding: 0 20px 20px;
+    width: 320px;
+    }
+
+    #restaurants-list {
+        justify-content: space-around;
+    }
+    /* ====================== Restaurant Details ====================== */
+    #restaurant-container, #reviews-container {
+      /*better view on screen */
+        width: 50%;
+    }
+
+    .inside #map-container {
+        width: 50%;
+    }
+
+    #breadcrumb {
+        width: calc(50% - 80px);
+    }
+}
