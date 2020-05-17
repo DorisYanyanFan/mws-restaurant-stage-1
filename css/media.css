@@ -4,6 +4,12 @@
         display: flex;
         flex-direction: column;
     }
+    /* ====================== Title and map ====================== */
+    nav h1 a {
+        font-size: 14pt;
+        letter-spacing: 8px;
+    }
+
     /* ====================== Restaurant Filtering ====================== */
     .filter-options {
       width: 100%;
@@ -11,6 +17,12 @@
       align-items: center;
       padding-top: 10px;
     }
+
+    .filter-options h2 {
+        width: 100%;
+        font-size: 12pt;
+    }
+
     /* ====================== Restaurant Details ====================== */
     .inside #map-container {
         height:60vh;
