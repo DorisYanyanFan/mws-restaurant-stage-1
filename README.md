@@ -4,30 +4,19 @@
 
 ## Open the project
 
-Fork and clone the starter repository. The code in this repository will serve as your baseline to begin development.
-From inside the new directory, launch a local client server using Python from your terminal:
+Fork and clone the repository. Then from inside the new directory, launch a local client server using Python from your terminal:
 Python 2: python -m SimpleHTTPServer 8000
 Python 3: python3 -m http.server 8000
 Visit the site in your browser at http://localhost:8000
 
 ### Responsive Design
-mobile cutting width 680px
-responsive design cut value: 1024px
+The website is adjusted to be readable for:
+1. mobile devise under 680px screen width.
+2. Pad width screen between 680px to 1024px.
+3. Computer width larger than 1024px.
 
-### Specification
+### Accessibility
 
-You have been provided the code for a restaurant reviews website. The code has a lot of issues. It’s barely usable on a desktop browser, much less a mobile device. It also doesn’t include any standard accessibility features, and it doesn’t work offline at all. Your job is to update the code to resolve these issues while still maintaining the included functionality.
+The website is updated with aria
 
-### What do I do from here?
-
-1. In this folder, start up a simple HTTP server to serve up the site files on your local computer. Python has some simple tools to do this, and you don't even need to know Python. For most people, it's already installed on your computer.
-
-In a terminal, check the version of Python you have: `python -V`. If you have Python 2.x, spin up the server with `python -m SimpleHTTPServer 8000` (or some other port, if port 8000 is already in use.) For Python 3.x, you can use `python3 -m http.server 8000`. If you don't have Python installed, navigate to Python's [website](https://www.python.org/) to download and install the software.
-
-2. With your server running, visit the site: `http://localhost:8000`, and look around for a bit to see what the current experience looks like.
-3. Explore the provided code, and make start making a plan to implement the required features in three areas: responsive design, accessibility and offline use.
-4. Write code to implement the updates to get this site on its way to being a mobile-ready website.
-
-### Note about ES6
-
-Most of the code in this project has been written to the ES6 JavaScript specification for compatibility with modern web browsers and future proofing JavaScript code. As much as possible, try to maintain use of ES6 in any additional JavaScript you write.
+### Offline use
