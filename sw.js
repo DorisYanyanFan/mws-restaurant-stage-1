@@ -22,7 +22,6 @@ self.addEventListener("install", function(event) {
       'https://fonts.googleapis.com/css?family=Roboto:300,400,500'
     ])
     .catch(error => {
-
     });
   }));
 });
@@ -79,9 +78,9 @@ function(event)
           );
         }
       }
-    ) // end of promise for cache match
+    )
 
-  ); // end of respond with
+  ); 
 
 }
 );
